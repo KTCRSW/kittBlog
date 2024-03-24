@@ -1,0 +1,9 @@
+Post DB
+
+- Post title
+- Post Sort Detail
+- Post Details
+- Post Image
+- Post Author
+- Post Date
+- Post Tags
