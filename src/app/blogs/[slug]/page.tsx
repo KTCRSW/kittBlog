@@ -4,6 +4,8 @@ import av from '../../image/avartar.jpg';
 import fs from "fs";
 import Markdown from 'markdown-to-jsx';
 import matter from "gray-matter";
+import Footer from "@/app/components/Footer";
+import Link from "next/link";
 
 
 const getPostContent = (slug: string) => {
@@ -36,7 +38,7 @@ export default function blogs(props: any){
                                 <Image className="h-12 w-12 shrink-0 rounded-full  object-cover" src={av} alt="" />
                                 <div className="flex flex-col gap-1">
                                     <p className="text-[#f8c7b7] text-xs">Post by</p>
-                                    <a href="#" className="font-semibold text-[#e08e73] ">Kittichai.R</a>
+                                    <Link href={'https://www.facebook.com/mektcrsw'} className="font-semibold text-[#e08e73] ">Kittichai.R</Link>
                                 </div>
                             </div>
                         </div>
@@ -47,6 +49,8 @@ export default function blogs(props: any){
                 </div>
             </div>
         </section>
+        <Footer/>
+
         </>
     );
 }

@@ -31,7 +31,7 @@ export default function PostList() {
     const postData = getPost();
     const postPreviews = postData.map((post) => (
         <div key={post.title} > 
-            <div className="flex flex-wrap justify-center mt-10 ">
+            <div className="flex flex-wrap justify-center  ">
                 <div className="p-4 max-w-lg transition  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 ">
                     <div className="flex rounded-lg h-full bg-[#E2BFB3] p-8 flex-col">
                         <div className="flex items-center mb-3">

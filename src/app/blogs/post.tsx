@@ -44,7 +44,7 @@ export default function Post() {
                         <hr />
                         <div className="py-3  max-w-[200px]">
                             <div className="flex gap-4">
-                                <Image className="h-12 w-12 shrink-0 rounded-lg object-cover" src={av} width={200} alt="" />
+                                <Image className="h-12  w-12 shrink-0 rounded-lg object-cover" src={av} width={200} alt="" />
                                 <div className="flex flex-col gap-1">
                                     <p className="text-gray-600 text-xs">Post by</p>
                                     <a href="#" className="font-semibold text-white ">Kittichai.R</a>

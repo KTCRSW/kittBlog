@@ -28,9 +28,9 @@ export default function Navbar() {
           </div>
           <div className="navbar-end">
           <ul className="menu menu-horizontal text-[18px] font-thin p-2">
-              <li><a role='btn' className='btn btn-ghost p-1 text-[18px]'>Home</a></li>
+              <li><Link href={'/'} role='btn' className='btn btn-ghost p-1 text-[18px]'>Home</Link></li>
               <li><Link href={'/posts'} role='btn' className='btn btn-ghost p-1 text-[18px]'>Blogs</Link></li>
-              <li><a role='btn' className='btn btn-ghost p-1 text-[18px]'>About</a></li>
+              <li><Link href={'/about'} role='btn' className='btn btn-ghost p-1 text-[18px]'>About</Link></li>
               <li><Link href={'https://github.com/ktcrsw'} role='btn' className='btn btn-ghost p-1 text-[18px]'><GitHubIcon/></Link></li>
             </ul>
           </div>

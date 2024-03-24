@@ -7,6 +7,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import Link from 'next/link';
 import { PostMeta } from '../components/PostMeta';
+import Footer from '../components/Footer';
 
 
 
@@ -71,6 +72,8 @@ export default function PostList() {
                 </div>
 
             </div>
+            <Footer/>
+
         </>
 
     );
