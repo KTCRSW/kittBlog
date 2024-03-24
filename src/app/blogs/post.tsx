@@ -29,8 +29,8 @@ export default function Post() {
     const postData = getPost();
     const postPreviews = postData.map((post) => (
        <div key={post.slug}>
-        <div className="flex flex-wrap justify-center mt-2">
-                <div className="card card-side bg-[#E2BFB3] shadow-xl ">
+        <div className="flex flex-wrap justify-center mt-2  ">
+                <div className="card card-side bg-[#E2BFB3] shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
                     <figure><Image src={profile} width={258} height={258} alt="Movie" /></figure>
                     <div className="card-body text-white">
                         <div className="rounded-full badge badge-outline">

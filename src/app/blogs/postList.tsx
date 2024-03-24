@@ -30,23 +30,23 @@ const getPost = (): PostMeta[] => {
 export default function PostList() {
     const postData = getPost();
     const postPreviews = postData.map((post) => (
-        <div key={post.title}>
-            <div className="flex flex-wrap justify-center mt-10">
-                <div className="p-4 max-w-lg">
+        <div key={post.title} > 
+            <div className="flex flex-wrap justify-center mt-10 ">
+                <div className="p-4 max-w-lg transition  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 ">
                     <div className="flex rounded-lg h-full bg-[#E2BFB3] p-8 flex-col">
                         <div className="flex items-center mb-3">
                             <FormatQuoteIcon className='text-white' />
-                            <h2 className="text-white  text-sm font-medium">{post.slug}</h2>
-                              <DateRangeIcon className='text-white' />
-                            <h2 className="text-white  text-lg font-medium">{post.date}</h2>
+                            <h2 className="text-white  text-lg font-medium">{post.slug}</h2>
                         </div>
+                              
+                            <h2 className="text-white  text-sm  font-medium"><DateRangeIcon className='text-white' />{post.date}</h2>
                           
                         <div className="flex flex-col justify-between flex-grow">
                             <p className="leading-relaxed text-base text-white ">
                                 บทความนี้จะเล่าเกี่ยวกับ &quot;{post.slug}&quot; ว่ามีที่มาและเนื้อหาเป็นอย่างไร
                             </p>
                         </div>
-                            <Link href={`/blogs/${post.slug}`} className="btn btn-ghost"><SearchIcon />อ่านต่อ</Link>
+                            <Link href={`/blogs/${post.slug}`} className="btn btn-ghost text-white"><SearchIcon />อ่านต่อ</Link>
                     </div>
                 </div>
             </div>
