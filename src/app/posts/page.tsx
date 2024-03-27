@@ -36,7 +36,7 @@ export default function PostList() {
 
 
             <Link href={`/blogs/${post.slug}`}
-                className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 relative flex h-full flex-col rounded-md  bg-[#E2BFB3] p-2.5  sm:rounded-lg sm:p-5 shadow-xl">
+                className=" transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-120 relative flex h-full flex-col rounded-md  bg-[#E2BFB3] p-2.5  sm:rounded-lg sm:p-5 shadow-xl">
 
                 <span className="text-md mb-0 font-semibold text-white sm:mb-1.5 sm:text-xl">
                     <FormatQuoteIcon />{post.title}

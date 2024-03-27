@@ -44,7 +44,9 @@ export default function blogs(props: any){
                         </div>
                         <hr className="border-[#cfa38a]"/>
                         <div className="text-[#c57459]">
-                            <Markdown>{post.content}</Markdown>
+                            <Markdown className='p-3 leading-loose'>
+                                {post.content}
+                            </Markdown>
                         </div>
                 </div>
             </div>
